@@ -1,0 +1,201 @@
+h1,h2,h3,h4,h5,h6, 
+p, th, td, a,
+.field__label, .field__item,
+.field-content {
+  font-family: "Lato", san-serif;
+}
+
+html, body {
+    height: 100%;
+    color: #495164;
+}
+
+a {
+	color: #f69232;
+	text-decoration: none;
+}
+
+body {
+    color: #495164;
+    background-color: #fff;
+}
+
+p {
+	margin: .75em auto;
+	line-height: 1.4em;
+}
+
+.l-page {
+  margin: 0 auto;
+  background-color: #fff;
+  clear: both;
+  height: 100%;
+}
+
+.header-wrapper {
+	background: #179999;
+}
+
+.l-header {
+	color: white;
+	min-height: 100px;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 1em auto;
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.l-branding, .l-region--header,
+#block-system-main-menu, #block-search-form {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em;
+}
+
+h1.site-name {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#block-system-main-menu {
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 15px;
+	}
+}
+
+.l-main {
+  min-height: 600px;
+  padding: 0 0 20px;
+  background-color: #fff;
+  float: none;
+}
+
+ul.breadcrumb {
+	display: none;
+}
+
+.node-type-case-study {
+	.field--name-title h2 {
+		font-size: 20px;
+		margin-bottom: 1em;
+	}
+
+	.group-header {
+		position: relative;
+		height: 340px;
+		overflow: hidden;
+		background: #000;
+	}
+
+	.field--name-field-header-image img {
+		background: linear-gradient(0deg, rgba(0,0,0,.85), rgba(0,0,0,.01)) !important;
+	}
+
+	.group-left, .group-right {
+		width: 100%;
+		margin: 1em auto;
+	}
+
+	.group-left {
+		border-bottom: thin solid #ccc;
+	}
+
+	#node-case-study-full-header-content {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		box-sizing: border-box;
+		margin-right: 0;
+		padding: 7% 34% 3% 16%;
+		color: #fff;
+		background: rgba(0,0,0,.6);
+		background: linear-gradient(0deg, rgba(0,0,0,.85), rgba(0,0,0,.01));
+	}
+
+	.field--name-field-lead, .field--name-field-workflow-guide {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.field--name-field-lead {
+		width: 66%;
+		margin-right: 1em;
+	}
+
+	.field--name-field-workflow-guide {
+		.field__label {
+			margin-bottom: .5em;
+		}
+
+		.field__item {
+			background: #076263;
+			padding: .5em;
+			margin-bottom: .25em;
+			color: white;
+			border-radius: .25em;
+		}
+	}
+
+	.field--name-field-asset, 
+	.field--name-field-threat, 
+	.field--name-field-option {
+		width: 30%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 1em 1em;
+
+		.field__label {
+			margin-bottom: .5em;
+		}
+
+		a:before {
+			content:"\203A\00A0";
+			color: #f69232;
+			}
+
+	}
+
+	#node-case-study-full-sidebar {
+		width: 25%;
+		margin-left: 1em;
+		float: right;
+	}
+
+	.field-group-div {
+		margin-bottom: 2.5em auto;
+
+		h3 {
+			font-size: 18px;
+			margin-bottom: .75em;
+		}
+
+		.field--name-field-region, .field--name-field-partner, .field--name-field-related-links {
+			a:before {
+				content:"\203A\00A0";
+				color: #f69232;
+			}
+		}
+
+		.field--name-field-state, .field--name-field-scale,
+		.field--name-field-project-start-end,
+		.field--name-field-funder-name, .field--name-field-additional-funders {
+			.field__item:before {
+			content:"\203A\00A0";
+			}
+		}
+
+		.field__item {
+			margin-bottom: .75em;
+
+			}
+		
+	}
+}
