@@ -20,9 +20,27 @@ body {
     background-color: #fff;
 }
 
-p {
+p, li {
 	margin: .75em auto;
 	line-height: 1.4em;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+em, i {
+	font-style: oblique;
+}
+
+ul {
+	margin-left: 20px;
+	padding-left: 20px;
+}
+
+ul li {
+	list-style: disc;
+	margin: .5em auto;
 }
 
 .l-page {
@@ -81,9 +99,9 @@ ul.breadcrumb {
 	display: none;
 }
 
-.node-type-case-study {
+.node-type-case-study, .node-type-region {
 	.field--name-title h2 {
-		font-size: 20px;
+		font-size: 30px;
 		margin-bottom: 1em;
 	}
 
@@ -114,10 +132,18 @@ ul.breadcrumb {
 		left: 0;
 		box-sizing: border-box;
 		margin-right: 0;
-		padding: 7% 34% 3% 16%;
+		padding: 7% 34% 1% 16%;
 		color: #fff;
 		background: rgba(0,0,0,.6);
-		background: linear-gradient(0deg, rgba(0,0,0,.85), rgba(0,0,0,.01));
+		background: linear-gradient(0deg, rgba(0,0,0,.65), rgba(0,0,0,.01));
+	}
+
+	.view-id-case_study_narrative {
+		.views-field .views-label {
+			font-size: 18px;
+		    margin-bottom: .75em;
+		    margin-top: 1.5em;
+		}
 	}
 
 	.field--name-field-lead, .field--name-field-workflow-guide {
@@ -128,6 +154,7 @@ ul.breadcrumb {
 	.field--name-field-lead {
 		width: 66%;
 		margin-right: 1em;
+		font-size: 1.2em;
 	}
 
 	.field--name-field-workflow-guide {
@@ -175,6 +202,7 @@ ul.breadcrumb {
 		h3 {
 			font-size: 18px;
 			margin-bottom: .75em;
+			margin-top:1.5em;
 		}
 
 		.field--name-field-region, .field--name-field-partner, .field--name-field-related-links {
