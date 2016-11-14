@@ -3,7 +3,42 @@
       margin: 0 auto;
 }
 
+.group-headercontent {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+    background: #000;
+}
+
+.group-header-lead {
+    width: 1170px;
+    margin: 0 auto;
+    border-bottom: thin solid #ccc;
+    padding: 20px 0;
+}
+
+.node-type-case-study, .node-type-region {
+    .field--name-title {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+	margin-right: 0;
+	padding: 7% 34% 1% 16%;
+	color: #fff;
+	background: rgba(0,0,0,.6);
+	background: linear-gradient(0deg, rgba(0,0,0,.65), rgba(0,0,0,.01));
+
+	h2 {
+	    font-size: 30px;
+	    margin-bottom: 1em;
+	}
+    }
+}
+
 .field--name-field-header-image img {
       width: 100%;
       height: auto;
+      background: linear-gradient(0deg, rgba(0,0,0,.85), rgba(0,0,0,.01));
 }

@@ -1,0 +1,23 @@
+.field--name-field-workflow-guide {
+    width: 33.9%;
+
+    .field__label {
+	margin-bottom: .5em;
+    }
+
+    .field__item {
+	background: #076263;
+	padding: .5em .5em .5em 46px;
+	margin-bottom: .25em !important;
+	color: white;
+	border-radius: .25em;
+
+	&.active {
+	    background: #179999;
+	    background-image: url('../images/check.png');
+	    background-repeat: no-repeat;
+	    background-size: 26px;
+	    background-position: 10px 3px;
+	}
+    }
+}

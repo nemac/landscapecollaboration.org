@@ -99,48 +99,23 @@ ul.breadcrumb {
 	display: none;
 }
 
+.field--name-narrative {
+    width: 70%;
+
+    .field-content {
+	line-height: 1.4em;
+    }
+}
+
 .node-type-case-study, .node-type-region {
-	.field--name-title h2 {
-		font-size: 30px;
-		margin-bottom: 1em;
-	}
-
-	.group-header {
-		position: relative;
-		height: 340px;
-		overflow: hidden;
-		background: #000;
-	}
-
-	.field--name-field-header-image img {
-		background: linear-gradient(0deg, rgba(0,0,0,.85), rgba(0,0,0,.01)) !important;
-	}
-
-	.group-left, .group-right {
+	.group-right {
 		width: 100%;
 		margin: 1em auto;
 	}
 
-	.group-left {
-		border-bottom: thin solid #ccc;
-	}
-
-	#node-case-study-full-header-content {
-		width: 100%;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		box-sizing: border-box;
-		margin-right: 0;
-		padding: 7% 34% 1% 16%;
-		color: #fff;
-		background: rgba(0,0,0,.6);
-		background: linear-gradient(0deg, rgba(0,0,0,.65), rgba(0,0,0,.01));
-	}
-
 	.view-id-case_study_narrative {
 		.views-field .views-label {
-			font-size: 18px;
+			font-size: 20px;
 		    margin-bottom: .75em;
 		    margin-top: 1.5em;
 		}
@@ -153,26 +128,8 @@ ul.breadcrumb {
 
 	.field--name-field-lead {
 		width: 66%;
-		margin-right: 1em;
+		padding-right: 1em;
 		font-size: 1.2em;
-	}
-
-	.field--name-field-workflow-guide {
-		.field__label {
-			margin-bottom: .5em;
-		}
-
-		.field__item {
-			background: #076263;
-			padding: .5em;
-			margin-bottom: .25em;
-			color: white;
-			border-radius: .25em;
-
-			&.active {
-				 background: #179999;
-			}
-		}
 	}
 
 	.field--name-field-asset, 
