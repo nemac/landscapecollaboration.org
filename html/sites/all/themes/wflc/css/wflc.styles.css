@@ -134,15 +134,14 @@ ul.breadcrumb {
   margin-bottom: .25em;
   color: white;
   border-radius: .25em; }
+  .node-type-case-study .field--name-field-workflow-guide .field__item.active, .node-type-region .field--name-field-workflow-guide .field__item.active {
+    background: #179999; }
 
 .node-type-case-study .field--name-field-asset,
 .node-type-case-study .field--name-field-threat,
 .node-type-case-study .field--name-field-option, .node-type-region .field--name-field-asset,
 .node-type-region .field--name-field-threat,
 .node-type-region .field--name-field-option {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
   margin: 1em 1em; }
   .node-type-case-study .field--name-field-asset .field__label,
   .node-type-case-study .field--name-field-threat .field__label,
@@ -180,6 +179,11 @@ ul.breadcrumb {
     content: "\203A\00A0"; }
   .node-type-case-study .field-group-div .field__item, .node-type-region .field-group-div .field__item {
     margin-bottom: .75em; }
+
+.node-type-case-study .group-footer .field-group-div, .node-type-region .group-footer .field-group-div {
+  display: inline-block;
+  width: 45%;
+  margin: auto 1em; }
 
 .view-id-case_studies {
   width: 1170px;
