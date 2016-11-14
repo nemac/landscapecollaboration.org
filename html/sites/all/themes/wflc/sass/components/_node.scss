@@ -168,15 +168,16 @@ ul.breadcrumb {
 			margin-bottom: .25em;
 			color: white;
 			border-radius: .25em;
+
+			&.active {
+				 background: #179999;
+			}
 		}
 	}
 
 	.field--name-field-asset, 
 	.field--name-field-threat, 
 	.field--name-field-option {
-		width: 30%;
-		display: inline-block;
-		vertical-align: top;
 		margin: 1em 1em;
 
 		.field__label {
@@ -225,5 +226,13 @@ ul.breadcrumb {
 
 			}
 		
+	}
+
+	.group-footer {
+		.field-group-div {
+			display: inline-block;
+			width: 45%;
+			margin: auto 1em;
+		}
 	}
 }
