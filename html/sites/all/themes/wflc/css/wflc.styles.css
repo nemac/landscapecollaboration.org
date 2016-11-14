@@ -79,40 +79,17 @@ h1.site-name {
 ul.breadcrumb {
   display: none; }
 
-.node-type-case-study .field--name-title h2, .node-type-region .field--name-title h2 {
-  font-size: 30px;
-  margin-bottom: 1em; }
+.field--name-narrative {
+  width: 70%; }
+  .field--name-narrative .field-content {
+    line-height: 1.4em; }
 
-.node-type-case-study .group-header, .node-type-region .group-header {
-  position: relative;
-  height: 340px;
-  overflow: hidden;
-  background: #000; }
-
-.node-type-case-study .field--name-field-header-image img, .node-type-region .field--name-field-header-image img {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.01)) !important; }
-
-.node-type-case-study .group-left, .node-type-case-study .group-right, .node-type-region .group-left, .node-type-region .group-right {
+.node-type-case-study .group-right, .node-type-region .group-right {
   width: 100%;
   margin: 1em auto; }
 
-.node-type-case-study .group-left, .node-type-region .group-left {
-  border-bottom: thin solid #ccc; }
-
-.node-type-case-study #node-case-study-full-header-content, .node-type-region #node-case-study-full-header-content {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
-  margin-right: 0;
-  padding: 7% 34% 1% 16%;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.01)); }
-
 .node-type-case-study .view-id-case_study_narrative .views-field .views-label, .node-type-region .view-id-case_study_narrative .views-field .views-label {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: .75em;
   margin-top: 1.5em; }
 
@@ -122,20 +99,8 @@ ul.breadcrumb {
 
 .node-type-case-study .field--name-field-lead, .node-type-region .field--name-field-lead {
   width: 66%;
-  margin-right: 1em;
+  padding-right: 1em;
   font-size: 1.2em; }
-
-.node-type-case-study .field--name-field-workflow-guide .field__label, .node-type-region .field--name-field-workflow-guide .field__label {
-  margin-bottom: .5em; }
-
-.node-type-case-study .field--name-field-workflow-guide .field__item, .node-type-region .field--name-field-workflow-guide .field__item {
-  background: #076263;
-  padding: .5em;
-  margin-bottom: .25em;
-  color: white;
-  border-radius: .25em; }
-  .node-type-case-study .field--name-field-workflow-guide .field__item.active, .node-type-region .field--name-field-workflow-guide .field__item.active {
-    background: #179999; }
 
 .node-type-case-study .field--name-field-asset,
 .node-type-case-study .field--name-field-threat,
@@ -217,8 +182,53 @@ ul.breadcrumb {
   width: 1170px;
   margin: 0 auto; }
 
+.group-headercontent {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  background: #000; }
+
+.group-header-lead {
+  width: 1170px;
+  margin: 0 auto;
+  border-bottom: thin solid #ccc;
+  padding: 20px 0; }
+
+.node-type-case-study .field--name-title, .node-type-region .field--name-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  margin-right: 0;
+  padding: 7% 34% 1% 16%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.01)); }
+  .node-type-case-study .field--name-title h2, .node-type-region .field--name-title h2 {
+    font-size: 30px;
+    margin-bottom: 1em; }
+
 .field--name-field-header-image img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.01)); }
+
+.field--name-field-workflow-guide {
+  width: 33.9%; }
+  .field--name-field-workflow-guide .field__label {
+    margin-bottom: .5em; }
+  .field--name-field-workflow-guide .field__item {
+    background: #076263;
+    padding: .5em .5em .5em 46px;
+    margin-bottom: .25em !important;
+    color: white;
+    border-radius: .25em; }
+    .field--name-field-workflow-guide .field__item.active {
+      background: #179999;
+      background-image: url("../images/check.png");
+      background-repeat: no-repeat;
+      background-size: 26px;
+      background-position: 10px 3px; }
 
 /*# sourceMappingURL=wflc.styles.css.map */
