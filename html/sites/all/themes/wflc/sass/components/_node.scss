@@ -11,8 +11,8 @@ html, body {
 }
 
 a {
-	color: #f69232;
-	text-decoration: none;
+    color: #f69232;
+    text-decoration: none;
 }
 
 body {
@@ -21,16 +21,16 @@ body {
 }
 
 p, li {
-	margin: .75em auto;
-	line-height: 1.4em;
+    margin: .75em auto;
+    line-height: 1.4em;
 }
 
 strong, b {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 em, i {
-	font-style: oblique;
+    font-style: oblique;
 }
 
 ul {
@@ -60,12 +60,8 @@ h3 {
 }
 
 .l-page {
-  margin: 0 auto;
-  background-color: #fff;
-  clear: both;
-  height: 100%;
- width: 1170px;
-  max-width: 100%;
+    background-color: #fff;
+    height: 100%;
 }
 
 .header-wrapper {
@@ -135,18 +131,18 @@ ul.breadcrumb {
 	display: none;
 }
 
-.field--name-narrative {
-    width: 70%;
-
-    .field-content {
+.field--name-narrative .field-content {
 	line-height: 1.4em;
-    }
 }
 
 .node-type-case-study, .node-type-region {
+	.group-left {
+		width: 75%;
+		padding-right: 6em;
+	}
+
 	.group-right {
-		width: 100%;
-		margin: 1em auto;
+		width: 24.9%;
 	}
 
 	.view-id-case_study_narrative {
@@ -182,12 +178,6 @@ ul.breadcrumb {
 			color: #f69232;
 			}
 
-	}
-
-	#node-case-study-full-sidebar {
-		width: 25%;
-		margin-left: 1em;
-		float: right;
 	}
 
 	.field-group-div {
