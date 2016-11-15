@@ -6,16 +6,15 @@ p, th, td, a, ul, em, i, strong, b,
   font-family: "Lato", san-serif; }
 
 html, body {
-  height: 100%;
-  color: #495164; }
-
-a {
-  color: #f69232;
-  text-decoration: none; }
+  height: 100%; }
 
 body {
   color: #495164;
   background-color: #fff; }
+
+a {
+  color: #f69232;
+  text-decoration: none; }
 
 p, li {
   margin: .75em auto;
@@ -46,60 +45,6 @@ h2 {
 
 h3 {
   font-size: 20px; }
-
-.l-page {
-  background-color: #fff;
-  height: 100%; }
-
-.header-wrapper {
-  background: #179999; }
-
-.l-header {
-  color: white;
-  min-height: 100px;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 1em auto; }
-  .l-header a {
-    text-decoration: none;
-    color: white; }
-
-.l-branding, .l-region--header,
-#block-superfish-1, #block-search-form {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 1em; }
-  .l-branding .sf-menu.sf-horizontal.sf-shadow ul, .l-branding .sf-menu.sf-vertical.sf-shadow ul,
-  .l-branding .sf-menu.sf-navbar.sf-shadow ul ul, .l-region--header .sf-menu.sf-horizontal.sf-shadow ul, .l-region--header .sf-menu.sf-vertical.sf-shadow ul,
-  .l-region--header .sf-menu.sf-navbar.sf-shadow ul ul,
-  #block-superfish-1 .sf-menu.sf-horizontal.sf-shadow ul,
-  #block-superfish-1 .sf-menu.sf-vertical.sf-shadow ul,
-  #block-superfish-1 .sf-menu.sf-navbar.sf-shadow ul ul, #block-search-form .sf-menu.sf-horizontal.sf-shadow ul, #block-search-form .sf-menu.sf-vertical.sf-shadow ul,
-  #block-search-form .sf-menu.sf-navbar.sf-shadow ul ul {
-    background: #076263 !important; }
-
-h1.site-name {
-  font-size: 24px;
-  font-weight: normal; }
-
-#superfish-1 li {
-  list-style: none;
-  display: inline-block;
-  padding: 0 15px; }
-
-#superfish-1 .nolink {
-  cursor: pointer; }
-
-#superfish-1 .sf-sub-indicator {
-  top: 1.5em;
-  right: 1.5em; }
-
-.l-main {
-  min-height: 600px;
-  padding: 0 0 20px;
-  background-color: #fff;
-  float: none; }
 
 ul.breadcrumb {
   display: none; }
@@ -171,6 +116,65 @@ ul.breadcrumb {
   width: 45%;
   margin: auto 1em; }
 
+.node, .view-display-id-page {
+  width: 1230px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+.l-page {
+  height: 100%; }
+
+.l-main {
+  min-height: 600px;
+  padding: 0 0 20px;
+  background-color: #fff;
+  float: none; }
+
+.header-wrapper {
+  background: #179999; }
+
+.l-header {
+  color: white;
+  min-height: 100px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 1em auto; }
+  .l-header a {
+    text-decoration: none;
+    color: white; }
+
+.l-branding, .l-region--header,
+#block-superfish-1, #block-search-form {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1em; }
+  .l-branding .sf-menu.sf-horizontal.sf-shadow ul, .l-branding .sf-menu.sf-vertical.sf-shadow ul,
+  .l-branding .sf-menu.sf-navbar.sf-shadow ul ul, .l-region--header .sf-menu.sf-horizontal.sf-shadow ul, .l-region--header .sf-menu.sf-vertical.sf-shadow ul,
+  .l-region--header .sf-menu.sf-navbar.sf-shadow ul ul,
+  #block-superfish-1 .sf-menu.sf-horizontal.sf-shadow ul,
+  #block-superfish-1 .sf-menu.sf-vertical.sf-shadow ul,
+  #block-superfish-1 .sf-menu.sf-navbar.sf-shadow ul ul, #block-search-form .sf-menu.sf-horizontal.sf-shadow ul, #block-search-form .sf-menu.sf-vertical.sf-shadow ul,
+  #block-search-form .sf-menu.sf-navbar.sf-shadow ul ul {
+    background: #076263 !important; }
+
+h1.site-name {
+  font-size: 24px;
+  font-weight: normal; }
+
+#superfish-1 li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px; }
+
+#superfish-1 .nolink {
+  cursor: pointer; }
+
+#superfish-1 .sf-sub-indicator {
+  top: 1.5em;
+  right: 1.5em; }
+
 .view-id-case_studies .views-row {
   display: inline-block;
   vertical-align: top;
@@ -203,12 +207,6 @@ ul.breadcrumb {
   max-width: 100%;
   font-size: 2.5em;
   margin: .5em auto; }
-
-.node, .view-display-id-page {
-  width: 1230px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 30px; }
 
 .group-headercontent {
   position: relative;
