@@ -10,12 +10,12 @@ html, body {
 }
 
 body {
-    color: #495164;
+    color: $text-color;
     background-color: #fff;
 }
 
 a {
-    color: #f69232;
+    color: $link-color;
     text-decoration: none;
 }
 

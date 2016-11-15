@@ -18,7 +18,7 @@ ul.breadcrumb {
 
 	a:before {
 	    content: "\203A\00A0";
-	    color: #f69232;
+	    color: $link-color;
 	}
 
 	h3, .field__label {

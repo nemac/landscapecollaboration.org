@@ -1,6 +1,6 @@
 // Configures the site header & header menus
 .header-wrapper {
-    background: #179999;
+    background: $header-color;
 }
 
 .l-header {
@@ -18,7 +18,7 @@
     .sf-menu.sf-horizontal.sf-shadow ul,
     .sf-menu.sf-vertical.sf-shadow ul, 
     .sf-menu.sf-navbar.sf-shadow ul ul {
-	background: #076263;
+	background: $menu-bg-color;
     }
 }
 
