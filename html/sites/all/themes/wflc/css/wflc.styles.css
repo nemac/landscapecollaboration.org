@@ -48,12 +48,8 @@ h3 {
   font-size: 20px; }
 
 .l-page {
-  margin: 0 auto;
   background-color: #fff;
-  clear: both;
-  height: 100%;
-  width: 1170px;
-  max-width: 100%; }
+  height: 100%; }
 
 .header-wrapper {
   background: #179999; }
@@ -108,14 +104,15 @@ h1.site-name {
 ul.breadcrumb {
   display: none; }
 
-.field--name-narrative {
-  width: 70%; }
-  .field--name-narrative .field-content {
-    line-height: 1.4em; }
+.field--name-narrative .field-content {
+  line-height: 1.4em; }
+
+.node-type-case-study .group-left, .node-type-region .group-left {
+  width: 75%;
+  padding-right: 6em; }
 
 .node-type-case-study .group-right, .node-type-region .group-right {
-  width: 100%;
-  margin: 1em auto; }
+  width: 24.9%; }
 
 .node-type-case-study .view-id-case_study_narrative .views-field .views-label, .node-type-region .view-id-case_study_narrative .views-field .views-label {
   font-size: 20px;
@@ -150,11 +147,6 @@ ul.breadcrumb {
   .node-type-region .field--name-field-option a:before {
     content: "\203A\00A0";
     color: #f69232; }
-
-.node-type-case-study #node-case-study-full-sidebar, .node-type-region #node-case-study-full-sidebar {
-  width: 25%;
-  margin-left: 1em;
-  float: right; }
 
 .node-type-case-study .field-group-div, .node-type-region .field-group-div {
   margin-bottom: 2.5em auto; }
@@ -212,9 +204,11 @@ ul.breadcrumb {
   font-size: 2.5em;
   margin: .5em auto; }
 
-.node {
-  width: 1170px;
-  margin: 0 auto; }
+.node, .view-display-id-page {
+  width: 1230px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px; }
 
 .group-headercontent {
   position: relative;
