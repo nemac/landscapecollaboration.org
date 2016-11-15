@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 h1, h2, h3, h4, h5, h6,
-p, th, td, a,
+p, th, td, a, ul, em, i, strong, b,
 .field__label, .field__item,
 .field-content {
   font-family: "Lato", san-serif; }
@@ -35,11 +35,25 @@ ul li {
   list-style: disc;
   margin: .5em auto; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em auto; }
+
+h1 {
+  font-size: 30px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
+
 .l-page {
   margin: 0 auto;
   background-color: #fff;
   clear: both;
-  height: 100%; }
+  height: 100%;
+  width: 1170px;
+  max-width: 100%; }
 
 .header-wrapper {
   background: #179999; }
@@ -55,20 +69,35 @@ ul li {
     color: white; }
 
 .l-branding, .l-region--header,
-#block-system-main-menu, #block-search-form {
+#block-superfish-1, #block-search-form {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   padding: 1em; }
+  .l-branding .sf-menu.sf-horizontal.sf-shadow ul, .l-branding .sf-menu.sf-vertical.sf-shadow ul,
+  .l-branding .sf-menu.sf-navbar.sf-shadow ul ul, .l-region--header .sf-menu.sf-horizontal.sf-shadow ul, .l-region--header .sf-menu.sf-vertical.sf-shadow ul,
+  .l-region--header .sf-menu.sf-navbar.sf-shadow ul ul,
+  #block-superfish-1 .sf-menu.sf-horizontal.sf-shadow ul,
+  #block-superfish-1 .sf-menu.sf-vertical.sf-shadow ul,
+  #block-superfish-1 .sf-menu.sf-navbar.sf-shadow ul ul, #block-search-form .sf-menu.sf-horizontal.sf-shadow ul, #block-search-form .sf-menu.sf-vertical.sf-shadow ul,
+  #block-search-form .sf-menu.sf-navbar.sf-shadow ul ul {
+    background: #076263 !important; }
 
 h1.site-name {
   font-size: 24px;
   font-weight: normal; }
 
-#block-system-main-menu li {
+#superfish-1 li {
   list-style: none;
   display: inline-block;
   padding: 0 15px; }
+
+#superfish-1 .nolink {
+  cursor: pointer; }
+
+#superfish-1 .sf-sub-indicator {
+  top: 1.5em;
+  right: 1.5em; }
 
 .l-main {
   min-height: 600px;
@@ -150,26 +179,31 @@ ul.breadcrumb {
   width: 45%;
   margin: auto 1em; }
 
-.view-id-case_studies {
-  width: 1170px;
-  margin: 0 auto;
-  max-width: 100%; }
-  .view-id-case_studies .views-row {
-    display: inline-block;
-    vertical-align: top;
-    margin: 1em;
-    padding: 0;
-    text-align: left;
-    margin: 12px 42px 0 0;
-    width: 242px; }
-  .view-id-case_studies .views-field-title h4 {
-    line-height: 1.25em;
-    margin: .5em 0 .5em 0;
-    font-size: 1.2em;
-    font-weight: normal; }
-  .view-id-case_studies .views-field-view-node {
-    font-size: 16px;
-    margin: .5em auto; }
+.view-id-case_studies .views-row {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1em;
+  padding: 0;
+  text-align: left;
+  margin: 12px 42px 0 0;
+  width: 242px; }
+
+.view-id-case_studies .views-field-title h4 {
+  line-height: 1.25em;
+  margin: .5em 0 .5em 0;
+  font-size: 1.2em;
+  font-weight: normal; }
+
+.view-id-case_studies .views-field-view-node {
+  font-size: 16px;
+  margin: .5em auto; }
+
+.view-id-workflow_guide .group-left, .view-id-actions .group-left {
+  width: 100%; }
+
+.view-id-workflow_guide .group-right, .view-id-actions .group-right {
+  float: right;
+  clear: right; }
 
 .page-case-studies h1#page-title {
   width: 1170px;
