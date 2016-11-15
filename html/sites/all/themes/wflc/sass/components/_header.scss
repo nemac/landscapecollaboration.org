@@ -1,0 +1,55 @@
+.header-wrapper {
+	background: #179999;
+}
+
+.l-header {
+	color: white;
+	min-height: 100px;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 1em auto;
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.l-branding, .l-region--header,
+#block-superfish-1, #block-search-form {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em;
+
+
+	.sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, 
+	.sf-menu.sf-navbar.sf-shadow ul ul {
+		background: #076263 !important;
+
+	}
+}
+
+h1.site-name {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#superfish-1 {
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 15px;
+	}
+
+	.nolink {
+		cursor: pointer;
+	}
+
+	.sf-sub-indicator {
+		top: 1.5em;
+		right: 1.5em;
+	}
+
+
+}
