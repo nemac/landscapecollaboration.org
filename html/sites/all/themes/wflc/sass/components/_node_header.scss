@@ -1,3 +1,4 @@
+// contains modifications for the headers of node pages
 .group-headercontent {
     position: relative;
     height: 340px;
@@ -18,7 +19,6 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	box-sizing: border-box;
 	margin-right: 0;
 	padding: 7% 34% 1% 16%;
 	color: #fff;
@@ -35,5 +35,4 @@
 .field--name-field-header-image img {
       width: 100%;
       height: auto;
-      background: linear-gradient(0deg, rgba(0,0,0,.85), rgba(0,0,0,.01));
 }

@@ -1,93 +1,86 @@
 // contains modifications for the main content of all node types
 ul.breadcrumb {
-	display: none;
+    display: none;
 }
 
-.field--name-narrative .field-content {
-	line-height: 1.4em;
-}
+.node-type-case-study {
+    .group-left {
+	width: 75%;
+	padding-right: 6em;
+    }
 
-.node-type-case-study, .node-type-region {
-	.group-left {
-		width: 75%;
-		padding-right: 6em;
+    .group-right {
+	width: 24.9%;
+    }
+
+    .group-right, .group-footer {
+	margin-top: 2.5em;
+
+	a:before {
+	    content: "\203A\00A0";
+	    color: #f69232;
 	}
 
-	.group-right {
-		width: 24.9%;
+	h3, .field__label {
+	    font-size: 18px;
+	    margin-bottom: .75em;
 	}
+    }
 
-	.view-id-case_study_narrative {
-		.views-field .views-label {
-			font-size: 20px;
-		    margin-bottom: .75em;
-		    margin-top: 1.5em;
-		}
-	}
-
-	.field--name-field-lead, .field--name-field-workflow-guide {
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.field--name-field-lead {
-		width: 66%;
-		padding-right: 1em;
-		font-size: 1.2em;
-	}
-
-	.field--name-field-asset, 
-	.field--name-field-threat, 
-	.field--name-field-option {
-		margin: 1em 1em;
-
-		.field__label {
-			margin-bottom: .5em;
-		}
-
-		a:before {
-			content:"\203A\00A0";
-			color: #f69232;
-			}
-
-	}
-
+    .group-footer {
 	.field-group-div {
-		margin-bottom: 2.5em auto;
-
-		h3 {
-			font-size: 18px;
-			margin-bottom: .75em;
-			margin-top:1.5em;
-		}
-
-		.field--name-field-region, .field--name-field-partner, .field--name-field-related-links {
-			a:before {
-				content:"\203A\00A0";
-				color: #f69232;
-			}
-		}
-
-		.field--name-field-state, .field--name-field-scale,
-		.field--name-field-project-start-end,
-		.field--name-field-funder-name, .field--name-field-additional-funders {
-			.field__item:before {
-			content:"\203A\00A0";
-			}
-		}
-
-		.field__item {
-			margin-bottom: .75em;
-
-			}
-		
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 47%;
+	    padding: 0 1em;
 	}
-
-	.group-footer {
-		.field-group-div {
-			display: inline-block;
-			width: 45%;
-			margin: auto 1em;
-		}
-	}
+    }
 }
+
+// todo: clean up the margin of the right group to be generalized
+.node-type-case-study {
+    .field--name-field-asset, 
+    .field--name-field-threat, 
+    .field--name-field-option {
+	margin-bottom: 1.5em;
+    }
+
+    .field-group-div .field__item {
+	margin-bottom: .75em;
+    }
+
+}
+
+.field--name-narrative {
+    .field-content {
+	line-height: 1.4em;
+    }
+
+    .views-label {
+	font-size: 20px;
+	margin-bottom: .75em;
+	margin-top: 1.5em;
+    }
+}
+
+.field--name-field-lead, .field--name-field-workflow-guide {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.field--name-field-lead {
+    width: 66%;
+    padding-right: 1em;
+    font-size: 1.2em;
+}
+
+.field--name-field-state,
+.field--name-field-scale,
+.field--name-field-project-start-end,
+.field--name-field-funder-name,
+.field--name-field-additional-funders {
+    .field__item:before {
+	content:"\203A\00A0";
+    }
+}
+

@@ -1,55 +1,53 @@
+// Configures the site header & header menus
 .header-wrapper {
-	background: #179999;
+    background: #179999;
 }
 
 .l-header {
-	color: white;
-	min-height: 100px;
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 1em auto;
+    color: white;
+    min-height: 100px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 1em auto;
 
-	a {
-		text-decoration: none;
-		color: white;
-	}
+    a {
+	text-decoration: none;
+	color: white;
+    }
+
+    .sf-menu.sf-horizontal.sf-shadow ul,
+    .sf-menu.sf-vertical.sf-shadow ul, 
+    .sf-menu.sf-navbar.sf-shadow ul ul {
+	background: #076263;
+    }
 }
 
 .l-branding, .l-region--header,
 #block-superfish-1, #block-search-form {
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	padding: 1em;
-
-
-	.sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, 
-	.sf-menu.sf-navbar.sf-shadow ul ul {
-		background: #076263 !important;
-
-	}
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
 }
 
 h1.site-name {
-	font-size: 24px;
-	font-weight: normal;
+    font-size: 24px;
+    font-weight: normal;
 }
 
 #superfish-1 {
-	li {
-		list-style: none;
-		display: inline-block;
-		padding: 0 15px;
-	}
+    li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 15px;
+    }
 
-	.nolink {
-		cursor: pointer;
-	}
+    .nolink {
+	cursor: pointer;
+    }
 
-	.sf-sub-indicator {
-		top: 1.5em;
-		right: 1.5em;
-	}
-
-
+    .sf-sub-indicator {
+	top: 1.5em;
+	right: 1.5em;
+    }
 }
