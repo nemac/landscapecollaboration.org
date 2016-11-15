@@ -49,72 +49,59 @@ h3 {
 ul.breadcrumb {
   display: none; }
 
-.field--name-narrative .field-content {
-  line-height: 1.4em; }
-
-.node-type-case-study .group-left, .node-type-region .group-left {
+.node-type-case-study .group-left {
   width: 75%;
   padding-right: 6em; }
 
-.node-type-case-study .group-right, .node-type-region .group-right {
+.node-type-case-study .group-right {
   width: 24.9%; }
 
-.node-type-case-study .view-id-case_study_narrative .views-field .views-label, .node-type-region .view-id-case_study_narrative .views-field .views-label {
+.node-type-case-study .group-right, .node-type-case-study .group-footer {
+  margin-top: 2.5em; }
+  .node-type-case-study .group-right a:before, .node-type-case-study .group-footer a:before {
+    content: "\203A\00A0";
+    color: #f69232; }
+  .node-type-case-study .group-right h3, .node-type-case-study .group-right .field__label, .node-type-case-study .group-footer h3, .node-type-case-study .group-footer .field__label {
+    font-size: 18px;
+    margin-bottom: .75em; }
+
+.node-type-case-study .group-footer .field-group-div {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  padding: 0 1em; }
+
+.node-type-case-study .field--name-field-asset,
+.node-type-case-study .field--name-field-threat,
+.node-type-case-study .field--name-field-option {
+  margin-bottom: 1.5em; }
+
+.node-type-case-study .field-group-div .field__item {
+  margin-bottom: .75em; }
+
+.field--name-narrative .field-content {
+  line-height: 1.4em; }
+
+.field--name-narrative .views-label {
   font-size: 20px;
   margin-bottom: .75em;
   margin-top: 1.5em; }
 
-.node-type-case-study .field--name-field-lead, .node-type-case-study .field--name-field-workflow-guide, .node-type-region .field--name-field-lead, .node-type-region .field--name-field-workflow-guide {
+.field--name-field-lead, .field--name-field-workflow-guide {
   display: inline-block;
   vertical-align: top; }
 
-.node-type-case-study .field--name-field-lead, .node-type-region .field--name-field-lead {
+.field--name-field-lead {
   width: 66%;
   padding-right: 1em;
   font-size: 1.2em; }
 
-.node-type-case-study .field--name-field-asset,
-.node-type-case-study .field--name-field-threat,
-.node-type-case-study .field--name-field-option, .node-type-region .field--name-field-asset,
-.node-type-region .field--name-field-threat,
-.node-type-region .field--name-field-option {
-  margin: 1em 1em; }
-  .node-type-case-study .field--name-field-asset .field__label,
-  .node-type-case-study .field--name-field-threat .field__label,
-  .node-type-case-study .field--name-field-option .field__label, .node-type-region .field--name-field-asset .field__label,
-  .node-type-region .field--name-field-threat .field__label,
-  .node-type-region .field--name-field-option .field__label {
-    margin-bottom: .5em; }
-  .node-type-case-study .field--name-field-asset a:before,
-  .node-type-case-study .field--name-field-threat a:before,
-  .node-type-case-study .field--name-field-option a:before, .node-type-region .field--name-field-asset a:before,
-  .node-type-region .field--name-field-threat a:before,
-  .node-type-region .field--name-field-option a:before {
-    content: "\203A\00A0";
-    color: #f69232; }
-
-.node-type-case-study .field-group-div, .node-type-region .field-group-div {
-  margin-bottom: 2.5em auto; }
-  .node-type-case-study .field-group-div h3, .node-type-region .field-group-div h3 {
-    font-size: 18px;
-    margin-bottom: .75em;
-    margin-top: 1.5em; }
-  .node-type-case-study .field-group-div .field--name-field-region a:before, .node-type-case-study .field-group-div .field--name-field-partner a:before, .node-type-case-study .field-group-div .field--name-field-related-links a:before, .node-type-region .field-group-div .field--name-field-region a:before, .node-type-region .field-group-div .field--name-field-partner a:before, .node-type-region .field-group-div .field--name-field-related-links a:before {
-    content: "\203A\00A0";
-    color: #f69232; }
-  .node-type-case-study .field-group-div .field--name-field-state .field__item:before, .node-type-case-study .field-group-div .field--name-field-scale .field__item:before,
-  .node-type-case-study .field-group-div .field--name-field-project-start-end .field__item:before,
-  .node-type-case-study .field-group-div .field--name-field-funder-name .field__item:before, .node-type-case-study .field-group-div .field--name-field-additional-funders .field__item:before, .node-type-region .field-group-div .field--name-field-state .field__item:before, .node-type-region .field-group-div .field--name-field-scale .field__item:before,
-  .node-type-region .field-group-div .field--name-field-project-start-end .field__item:before,
-  .node-type-region .field-group-div .field--name-field-funder-name .field__item:before, .node-type-region .field-group-div .field--name-field-additional-funders .field__item:before {
-    content: "\203A\00A0"; }
-  .node-type-case-study .field-group-div .field__item, .node-type-region .field-group-div .field__item {
-    margin-bottom: .75em; }
-
-.node-type-case-study .group-footer .field-group-div, .node-type-region .group-footer .field-group-div {
-  display: inline-block;
-  width: 45%;
-  margin: auto 1em; }
+.field--name-field-state .field__item:before,
+.field--name-field-scale .field__item:before,
+.field--name-field-project-start-end .field__item:before,
+.field--name-field-funder-name .field__item:before,
+.field--name-field-additional-funders .field__item:before {
+  content: "\203A\00A0"; }
 
 .node, .view-display-id-page {
   width: 1230px;
@@ -143,6 +130,10 @@ ul.breadcrumb {
   .l-header a {
     text-decoration: none;
     color: white; }
+  .l-header .sf-menu.sf-horizontal.sf-shadow ul,
+  .l-header .sf-menu.sf-vertical.sf-shadow ul,
+  .l-header .sf-menu.sf-navbar.sf-shadow ul ul {
+    background: #076263; }
 
 .l-branding, .l-region--header,
 #block-superfish-1, #block-search-form {
@@ -150,14 +141,6 @@ ul.breadcrumb {
   display: inline-block;
   vertical-align: middle;
   padding: 1em; }
-  .l-branding .sf-menu.sf-horizontal.sf-shadow ul, .l-branding .sf-menu.sf-vertical.sf-shadow ul,
-  .l-branding .sf-menu.sf-navbar.sf-shadow ul ul, .l-region--header .sf-menu.sf-horizontal.sf-shadow ul, .l-region--header .sf-menu.sf-vertical.sf-shadow ul,
-  .l-region--header .sf-menu.sf-navbar.sf-shadow ul ul,
-  #block-superfish-1 .sf-menu.sf-horizontal.sf-shadow ul,
-  #block-superfish-1 .sf-menu.sf-vertical.sf-shadow ul,
-  #block-superfish-1 .sf-menu.sf-navbar.sf-shadow ul ul, #block-search-form .sf-menu.sf-horizontal.sf-shadow ul, #block-search-form .sf-menu.sf-vertical.sf-shadow ul,
-  #block-search-form .sf-menu.sf-navbar.sf-shadow ul ul {
-    background: #076263 !important; }
 
 h1.site-name {
   font-size: 24px;
@@ -178,9 +161,8 @@ h1.site-name {
 .view-id-case_studies .views-row {
   display: inline-block;
   vertical-align: top;
-  margin: 1em;
-  padding: 0;
   text-align: left;
+  padding: 0;
   margin: 12px 42px 0 0;
   width: 242px; }
 
@@ -203,7 +185,6 @@ h1.site-name {
 
 .page-case-studies h1#page-title {
   width: 1170px;
-  margin: 0 auto;
   max-width: 100%;
   font-size: 2.5em;
   margin: .5em auto; }
@@ -225,7 +206,6 @@ h1.site-name {
   position: absolute;
   bottom: 0;
   left: 0;
-  box-sizing: border-box;
   margin-right: 0;
   padding: 7% 34% 1% 16%;
   color: #fff;
@@ -237,8 +217,7 @@ h1.site-name {
 
 .field--name-field-header-image img {
   width: 100%;
-  height: auto;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.01)); }
+  height: auto; }
 
 .field--name-field-workflow-guide {
   width: 33.9%; }
