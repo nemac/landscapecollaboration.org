@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,h6, 
-p, th, td, a,
+p, th, td, a, ul, em, i, strong, b,
 .field__label, .field__item,
 .field-content {
   font-family: "Lato", san-serif;
@@ -43,11 +43,29 @@ ul li {
 	margin: .5em auto;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	margin: 1em auto;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
 .l-page {
   margin: 0 auto;
   background-color: #fff;
   clear: both;
   height: 100%;
+ width: 1170px;
+  max-width: 100%;
 }
 
 .header-wrapper {
@@ -68,11 +86,18 @@ ul li {
 }
 
 .l-branding, .l-region--header,
-#block-system-main-menu, #block-search-form {
+#block-superfish-1, #block-search-form {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 	padding: 1em;
+
+
+	.sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, 
+	.sf-menu.sf-navbar.sf-shadow ul ul {
+		background: #076263 !important;
+
+	}
 }
 
 h1.site-name {
@@ -80,12 +105,23 @@ h1.site-name {
 	font-weight: normal;
 }
 
-#block-system-main-menu {
+#superfish-1 {
 	li {
 		list-style: none;
 		display: inline-block;
 		padding: 0 15px;
 	}
+
+	.nolink {
+		cursor: pointer;
+	}
+
+	.sf-sub-indicator {
+		top: 1.5em;
+		right: 1.5em;
+	}
+
+
 }
 
 .l-main {
