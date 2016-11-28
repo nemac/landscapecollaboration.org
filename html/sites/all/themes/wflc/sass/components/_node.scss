@@ -3,14 +3,19 @@ ul.breadcrumb {
     display: none;
 }
 
-.node-type-case-study {
+.node-type-case-study, .node-type-region {
     .group-left {
 	width: 75%;
 	padding-right: 6em;
     }
 
     .group-right {
-	width: 24.9%;
+		width: 24.9%;
+
+		.views-field-title {
+			margin-bottom: 1em;
+		}
+
     }
 
     .group-right, .group-footer {
@@ -21,9 +26,14 @@ ul.breadcrumb {
 	    color: $link-color;
 	}
 
+	ul.pager a:before {
+		content: none;
+	}
+
 	h3, .field__label {
 	    font-size: 18px;
 	    margin-bottom: .75em;
+	    color: #179999;
 	}
     }
 
@@ -83,4 +93,5 @@ ul.breadcrumb {
 	content:"\203A\00A0";
     }
 }
+
 
