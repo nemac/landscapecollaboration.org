@@ -24,7 +24,7 @@ strong, b {
   font-weight: bold; }
 
 em, i {
-  font-style: oblique; }
+  font-style: italic; }
 
 ul {
   margin-left: 20px;
@@ -49,23 +49,28 @@ h3 {
 ul.breadcrumb {
   display: none; }
 
-.node-type-case-study .group-left {
+.node-type-case-study .group-left, .node-type-region .group-left {
   width: 75%;
   padding-right: 6em; }
 
-.node-type-case-study .group-right {
+.node-type-case-study .group-right, .node-type-region .group-right {
   width: 24.9%; }
+  .node-type-case-study .group-right .views-field-title, .node-type-region .group-right .views-field-title {
+    margin-bottom: 1em; }
 
-.node-type-case-study .group-right, .node-type-case-study .group-footer {
+.node-type-case-study .group-right, .node-type-case-study .group-footer, .node-type-region .group-right, .node-type-region .group-footer {
   margin-top: 2.5em; }
-  .node-type-case-study .group-right a:before, .node-type-case-study .group-footer a:before {
+  .node-type-case-study .group-right a:before, .node-type-case-study .group-footer a:before, .node-type-region .group-right a:before, .node-type-region .group-footer a:before {
     content: "\203A\00A0";
     color: #f69232; }
-  .node-type-case-study .group-right h3, .node-type-case-study .group-right .field__label, .node-type-case-study .group-footer h3, .node-type-case-study .group-footer .field__label {
+  .node-type-case-study .group-right ul.pager a:before, .node-type-case-study .group-footer ul.pager a:before, .node-type-region .group-right ul.pager a:before, .node-type-region .group-footer ul.pager a:before {
+    content: none; }
+  .node-type-case-study .group-right h3, .node-type-case-study .group-right .field__label, .node-type-case-study .group-footer h3, .node-type-case-study .group-footer .field__label, .node-type-region .group-right h3, .node-type-region .group-right .field__label, .node-type-region .group-footer h3, .node-type-region .group-footer .field__label {
     font-size: 18px;
-    margin-bottom: .75em; }
+    margin-bottom: .75em;
+    color: #179999; }
 
-.node-type-case-study .group-footer .field-group-div {
+.node-type-case-study .group-footer .field-group-div, .node-type-region .group-footer .field-group-div {
   display: inline-block;
   vertical-align: top;
   width: 47%;
@@ -115,6 +120,9 @@ ul.breadcrumb {
 .l-main {
   min-height: 600px;
   padding: 0 0 20px; }
+
+h3 {
+  color: #179999; }
 
 .header-wrapper {
   background: #179999; }
