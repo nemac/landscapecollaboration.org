@@ -20,6 +20,17 @@
     .sf-menu.sf-navbar.sf-shadow ul ul {
 	background: $menu-bg-color;
     }
+
+    input.form-submit {
+    background: white;
+    border: none;
+    border-radius: 2px;
+    color: $header-color;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-shadow: none;
+    font-size: .75em;
+}
 }
 
 .l-branding, .l-region--header,

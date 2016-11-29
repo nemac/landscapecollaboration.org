@@ -1,0 +1,88 @@
+.views-exposed-widget {
+    & {
+	margin-right: 20px;
+    }
+
+    &:last-child {
+	margin-right: 0;
+    }
+
+    .fieldset-wrapper {
+	display: none !important;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 15px 15px 15px 12px;
+    }
+
+    &:hover .fieldset-wrapper {
+	display: block !important;
+    }
+
+    .fieldset-legend {
+	background: none !important;
+
+	&:before {
+	    content: "\25B8";
+	    color: $link-color;
+	    position: absolute;
+	    left: 0;
+	}
+    }
+
+    &:hover .fieldset-legend:before {
+	content: "\25BE";
+    }
+
+    > .views-widget {
+	padding-bottom: 2px;
+	border-bottom: 1px solid $link-color;
+    }
+
+    &:hover > .views-widget {
+	border-bottom: 0;
+    }
+
+    .fieldset-title {
+	cursor: default;
+    }
+}
+
+.views-exposed-form {
+    .form-item {
+	white-space: nowrap;
+	margin-bottom: 5px;
+
+	&:last-child {
+	    margin-bottom: 0;
+	}
+    }
+
+    label, input {
+	cursor: pointer;
+	vertical-align: middle;
+    }
+
+    input[type="submit"] {
+	background: #fff;
+	border: 0;
+	border-bottom: 1px solid $link-color;
+	font-size: 16px;
+	color: $link-color;
+	margin-top: 0;
+	padding: 0 10px;
+    }
+
+    .views-reset-button {
+	padding-top: 7px;
+    }
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 0;
+}
+
+.view-id-case_studies .views-submit-button {
+    margin: 0;
+    padding: 0;
+}

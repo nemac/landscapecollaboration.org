@@ -12,8 +12,12 @@ ul.breadcrumb {
     .group-right {
 		width: 24.9%;
 
+		.views-row {
+			margin-bottom: 1.25em;
+		}
+
 		.views-field-title {
-			margin-bottom: 1em;
+			margin-bottom: .5em;
 		}
 
     }
@@ -94,4 +98,12 @@ ul.breadcrumb {
     }
 }
 
+.views-field-field-header-image {
+	text-align: center;
+	
+	a:before {
+		content: none !important;
+	}
+
+}
 
