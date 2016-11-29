@@ -33,7 +33,9 @@
     }
 }
 
-.page-case-studies h1#page-title {
+.page-case-studies h1#page-title,
+.page-workflow-guide h1#page-title,
+.page-actions h1#page-title {
     width: 1170px;
     max-width: 100%;
     font-size: 2.5em;

@@ -128,3 +128,17 @@ ul.breadcrumb {
 	content: none !important;
     }
 }
+
+
+.page-actions, .page-workflow-guide {
+    .views-field-field-image {
+        position: relative;
+        float: right;
+        padding: 0 0 1em 1em;
+        clear: right;
+
+        ul li {
+            list-style: none;
+        }
+    }
+}
