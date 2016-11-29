@@ -129,6 +129,14 @@ ul.breadcrumb {
   .views-field-field-header-image a:before {
     content: none !important; }
 
+.page-actions .views-field-field-image, .page-workflow-guide .views-field-field-image {
+  position: relative;
+  float: right;
+  padding: 0 0 1em 1em;
+  clear: right; }
+  .page-actions .views-field-field-image ul li, .page-workflow-guide .views-field-field-image ul li {
+    list-style: none; }
+
 .node, .view-display-id-page {
   width: 1230px;
   max-width: 100%;
@@ -219,7 +227,9 @@ h1.site-name {
   float: right;
   clear: right; }
 
-.page-case-studies h1#page-title {
+.page-case-studies h1#page-title,
+.page-workflow-guide h1#page-title,
+.page-actions h1#page-title {
   width: 1170px;
   max-width: 100%;
   font-size: 2.5em;
@@ -365,7 +375,7 @@ h1.site-name {
         color: white; }
 
 .front .field--name-field-leading-text {
-  font-size: 20px;
-  color: #179999; }
+  font-size: 25px;
+  color: #f69232; }
 
 /*# sourceMappingURL=wflc.styles.css.map */
