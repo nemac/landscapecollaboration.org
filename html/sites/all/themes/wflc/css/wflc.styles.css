@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 h1, h2, h3, h4, h5, h6,
-p, th, td, a, ul, em, i, strong, b,
+p, th, td, a, ul, em, i, strong, b, label, input,
 .field__label, .field__item,
 .field-content {
   font-family: "Lato", san-serif; }
@@ -55,8 +55,10 @@ ul.breadcrumb {
 
 .node-type-case-study .group-right, .node-type-region .group-right {
   width: 24.9%; }
+  .node-type-case-study .group-right .views-row, .node-type-region .group-right .views-row {
+    margin-bottom: 1.25em; }
   .node-type-case-study .group-right .views-field-title, .node-type-region .group-right .views-field-title {
-    margin-bottom: 1em; }
+    margin-bottom: .5em; }
 
 .node-type-case-study .group-right, .node-type-case-study .group-footer, .node-type-region .group-right, .node-type-region .group-footer {
   margin-top: 2.5em; }
@@ -108,6 +110,11 @@ ul.breadcrumb {
 .field--name-field-additional-funders .field__item:before {
   content: "\203A\00A0"; }
 
+.views-field-field-header-image {
+  text-align: center; }
+  .views-field-field-header-image a:before {
+    content: none !important; }
+
 .node, .view-display-id-page {
   width: 1230px;
   max-width: 100%;
@@ -140,6 +147,15 @@ h3 {
   .l-header .sf-menu.sf-vertical.sf-shadow ul,
   .l-header .sf-menu.sf-navbar.sf-shadow ul ul {
     background: #076263; }
+  .l-header input.form-submit {
+    background: white;
+    border: none;
+    border-radius: 2px;
+    color: #179999;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-shadow: none;
+    font-size: .75em; }
 
 .l-branding, .l-region--header,
 #block-superfish-1, #block-search-form {
@@ -241,5 +257,101 @@ h1.site-name {
       background-repeat: no-repeat;
       background-size: 26px;
       background-position: 10px 3px; }
+
+.views-exposed-widget {
+  margin-right: 20px; }
+
+.views-exposed-widget:last-child {
+  margin-right: 0; }
+
+.views-exposed-widget .fieldset-wrapper {
+  display: none !important;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px 15px 15px 12px; }
+
+.views-exposed-widget:hover .fieldset-wrapper {
+  display: block !important; }
+
+.views-exposed-widget .fieldset-legend {
+  background: none !important; }
+  .views-exposed-widget .fieldset-legend:before {
+    content: "\25B8";
+    color: #f69232;
+    position: absolute;
+    left: 0; }
+
+.views-exposed-widget:hover .fieldset-legend:before {
+  content: "\25BE"; }
+
+.views-exposed-widget > .views-widget {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #f69232; }
+
+.views-exposed-widget:hover > .views-widget {
+  border-bottom: 0; }
+
+.views-exposed-widget .fieldset-title {
+  cursor: default; }
+
+.views-exposed-form .form-item {
+  white-space: nowrap;
+  margin-bottom: 5px; }
+  .views-exposed-form .form-item:last-child {
+    margin-bottom: 0; }
+
+.views-exposed-form label, .views-exposed-form input {
+  cursor: pointer;
+  vertical-align: middle; }
+
+.views-exposed-form input[type="submit"] {
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #f69232;
+  font-size: 16px;
+  color: #f69232;
+  margin-top: 0;
+  padding: 0 10px; }
+
+.views-exposed-form .views-reset-button {
+  padding-top: 7px; }
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0; }
+
+.view-id-case_studies .views-submit-button {
+  margin: 0;
+  padding: 0; }
+
+.front .field--name-slideshow {
+  margin: 1em 0;
+  position: relative; }
+  .front .field--name-slideshow .views-slideshow-controls-bottom {
+    text-align: right;
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-top: .5em; }
+    .front .field--name-slideshow .views-slideshow-controls-bottom span {
+      margin: auto .5em; }
+  .front .field--name-slideshow .views-field-title {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-right: 0;
+    padding: 7% 34% 1% 16%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.01)); }
+    .front .field--name-slideshow .views-field-title h2 {
+      font-size: 30px;
+      margin-bottom: 1em; }
+      .front .field--name-slideshow .views-field-title h2 a {
+        color: white; }
+
+.front .field--name-field-leading-text {
+  font-size: 20px;
+  color: #179999; }
 
 /*# sourceMappingURL=wflc.styles.css.map */
