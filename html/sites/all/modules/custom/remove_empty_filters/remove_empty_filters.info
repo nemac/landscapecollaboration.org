@@ -1,0 +1,5 @@
+name = Remove Empty Exposed Filters
+package = WFLC
+description = Modifies exposed filters to remove empty items
+core = 7.x
+dependencies[] = views

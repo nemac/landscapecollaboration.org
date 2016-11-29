@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * Implements hook_form_alter
+ */
+function remove_empty_filters_form_alter(&$form, &$form_state, $form_id) {
+    if ($form_id === 'views_exposed_form') {
+        $where_statement = '';
+        $join_statement = '';
+        foreach(array_keys($form_state['input']) as $key) {
+            if (sizeof($form_state['input'][$key]) === 0) {
+                continue;
+            }
+
+            $column_key = '';
+            $table_key = '';
+
+            foreach(array_keys($form['#info']) as $form_key) {
+                if ($form['#info'][$form_key]['value'] === $key) {
+                    $column_key = str_replace('filter-', '', $form_key);
+                    $table_key = str_replace('_tid', '', $column_key);
+                    $table_key = str_replace('_target_id', '', $table_key);
+                    $table_key = 'field_data_' . $table_key;
+                    break;
+                }
+            }
+
+            $join_statement .= ' LEFT JOIN ' . $table_key . ' AS ' . $key . ' ON f.entity_id=' . $key . '.entity_id ';
+
+            $operator = ' AND ';
+            if ($column_key === 'field_region_target_id') {
+                $operator = ' OR ';
+            }
+
+            if ($where_statement !== '') {
+                $where_statement .= ' AND ';
+            }
+
+            $where_statement .= ' ( ';
+            for ($i = 0; $i < count($form_state['input'][$key]); $i++) {
+                if ($i !== 0) {
+                    $where_statement .= $operator;
+                }
+                $where_statement .= ' ' . $key . '.' . $column_key . '=' . $form_state['input'][$key][$i];
+            }
+            $where_statement .= ' ) ';
+        }
+
+        foreach(array_keys($form['#info']) as $key) {
+            $column_key = str_replace('filter-', '', $key);
+
+            $table_key = str_replace('_tid', '', $column_key);
+            $table_key = str_replace('_target_id', '', $table_key);
+            $table_key = 'field_data_' . $table_key;
+
+            $form_key = $form['#info'][$key]['value'];
+
+            $query_string = "SELECT f.$column_key AS value, count(distinct f.entity_id) AS count FROM { $table_key } AS f";
+            if ($join_statement !== '' && $where_statement !== '') {
+                $query_string .= $join_statement;
+                $query_string .= ' WHERE ' . $where_statement;
+            }
+            $query_string .= " GROUP BY f.$column_key";
+
+            $query = db_query($query_string);
+            $result = $query->fetchAll();
+            
+            $keys = [];
+            foreach($result as $record) {
+                $value = $record->value;
+                $keys[] = $value;
+                $count = ' (' . $record->count . ')';
+                $form[$form_key]['#options'][$value] = $form[$form_key]['#options'][$value] . $count;
+            }
+
+            foreach(array_keys($form[$form_key]['#options']) as $option) {
+                if (array_search($option, $keys) === FALSE) {
+                    unset($form[$form_key]['#options'][$option]);
+                }
+            }
+        }
+    }
+}
