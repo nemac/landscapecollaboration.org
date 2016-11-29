@@ -78,6 +78,9 @@ ul.breadcrumb {
   width: 47%;
   padding: 0 2.9% 0 0; }
 
+.node-type-case-study .group-footer .date-display-range, .node-type-region .group-footer .date-display-range {
+  display: inline-block; }
+
 .node h3, .node .field__label {
   font-size: 18px;
   margin-bottom: .75em;
@@ -112,6 +115,7 @@ ul.breadcrumb {
 .field--name-field-scale .field__item:before,
 .field--name-field-project-start-end .field__item:before,
 .field--name-field-funder-name .field__item:before,
+.field--name-field-main-funder .field__item:before,
 .field--name-field-additional-funders .field__item:before {
   content: "\203A\00A0"; }
 
