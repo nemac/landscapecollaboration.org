@@ -49,6 +49,10 @@ ul.breadcrumb {
 	    width: 47%;
 	    padding: 0 2.9% 0 0;
 	}
+
+	.date-display-range {
+	    display: inline-block;
+	}
     }
 }
 
@@ -101,6 +105,7 @@ ul.breadcrumb {
 .field--name-field-scale,
 .field--name-field-project-start-end,
 .field--name-field-funder-name,
+.field--name-field-main-funder,
 .field--name-field-additional-funders {
     .field__item:before {
 	content:"\203A\00A0";
