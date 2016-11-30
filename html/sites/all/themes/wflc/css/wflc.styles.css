@@ -119,6 +119,9 @@ ul.breadcrumb {
 .field--name-field-additional-funders .field__item:before {
   content: "\203A\00A0"; }
 
+.views-field-field-additional-funders {
+  margin-top: 1em; }
+
 .field--name-field-header-image-attribution {
   margin-top: 1.5em;
   border-top: thin solid #ccc;
