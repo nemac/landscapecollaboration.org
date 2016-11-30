@@ -94,6 +94,9 @@ ul.breadcrumb {
 .node-type-case-study .field-group-div .field__item {
   margin-bottom: .75em; }
 
+.node-type-case-study .field-group-div .ds-1col .field__item {
+  margin-bottom: 0; }
+
 .field--name-narrative .field-content {
   line-height: 1.4em; }
 
