@@ -72,6 +72,10 @@ ul.breadcrumb {
   font-size: 1em;
   padding: 0; }
 
+.page-search .field--name-title h2 {
+  font-size: 20px;
+  margin: .5em auto; }
+
 .node-type-case-study .group-left, .node-type-region .group-left {
   width: 75%;
   padding-right: 6em; }
