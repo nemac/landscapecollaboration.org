@@ -5,62 +5,85 @@ ul.breadcrumb {
 
 .field--label-inline {
     .field__label, .field__items, .field__item {
-	float: none;
-	display: inline;
+    float: none;
+    display: inline;
     }
+}
+
+.ds-search-highlight {
+    background-color: #a7e4e4;
+}
+
+.page-search form.search-form,
+.page-search .l-content>h2,
+.ds-search-extra {
+    width: 1230px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.page-search form.search-form {
+    margin: 1em auto;
+}
+
+.page-search .field--name-field-lead {
+    width: 100%;
+    font-size: 1em;
+    padding:0;
 }
 
 .node-type-case-study, .node-type-region {
     .group-left {
-	width: 75%;
-	padding-right: 6em;
+    width: 75%;
+    padding-right: 6em;
     }
 
     .group-right {
-	width: 24.9%;
+    width: 24.9%;
 
-	.views-row {
-	    margin-bottom: 1.25em;
-	}
+    .views-row {
+        margin-bottom: 1.25em;
+    }
 
-	.views-field-title {
-	    margin-bottom: .5em;
-	}
+    .views-field-title {
+        margin-bottom: .5em;
+    }
 
     }
 
     .group-right, .group-footer {
-	margin-top: 2.5em;
+    margin-top: 2.5em;
 
-	a:before {
-	    content: "\203A\00A0";
-	    color: $link-color;
-	}
+    a:before {
+        content: "\203A\00A0";
+        color: $link-color;
+    }
 
-	ul.pager a:before {
-		content: none;
-	}
+    ul.pager a:before {
+        content: none;
+    }
     }
 
     .group-footer {
-	.field-group-div {
-	    display: inline-block;
-	    vertical-align: top;
-	    width: 47%;
-	    padding: 0 2.9% 0 0;
-	}
+    .field-group-div {
+        display: inline-block;
+        vertical-align: top;
+        width: 47%;
+        padding: 0 2.9% 0 0;
+    }
 
-	.date-display-range {
-	    display: inline-block;
-	}
+    .date-display-range {
+        display: inline-block;
+    }
     }
 }
 
 .node {
     h3, .field__label {
-	font-size: 18px;
-	margin-bottom: .75em;
-	color: #179999;
+    font-size: 18px;
+    margin-bottom: .75em;
+    color: #179999;
     }
 }
 
@@ -69,27 +92,27 @@ ul.breadcrumb {
     .field--name-field-asset, 
     .field--name-field-threat, 
     .field--name-field-option {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
     }
 
     .field-group-div .field__item {
-	margin-bottom: .75em;
+    margin-bottom: .75em;
     }
 
     .field-group-div .ds-1col .field__item {
-	margin-bottom: 0;
+    margin-bottom: 0;
     }
 }
 
 .field--name-narrative {
     .field-content {
-	line-height: 1.4em;
+    line-height: 1.4em;
     }
 
     .views-label {
-	font-size: 20px;
-	margin-bottom: .75em;
-	margin-top: 1.5em;
+    font-size: 20px;
+    margin-bottom: .75em;
+    margin-top: 1.5em;
     }
 }
 
@@ -111,7 +134,7 @@ ul.breadcrumb {
 .field--name-field-main-funder,
 .field--name-field-additional-funders {
     .field__item:before {
-	content:"\203A\00A0";
+    content:"\203A\00A0";
     }
 }
 
@@ -125,19 +148,19 @@ ul.breadcrumb {
     padding-top: 1em;
 
     &, & .field__label {
-	font-size: 14px;
+    font-size: 14px;
     }
 
     .field__label {
-	margin-bottom: 0;
+    margin-bottom: 0;
     }
 }
 
 .views-field-field-header-image {
     text-align: center;
-	
+    
     a:before {
-	content: none !important;
+    content: none !important;
     }
 }
 

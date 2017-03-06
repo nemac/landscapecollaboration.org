@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 h1, h2, h3, h4, h5, h6,
-p, th, td, a, ul, em, i, strong, b, label, input,
+p, th, td, a, ul, em, i, strong, b, label, input, .ds-search-extra,
 .field__label, .field__item,
 .field-content {
   font-family: "Lato", san-serif; }
@@ -52,6 +52,25 @@ ul.breadcrumb {
 .field--label-inline .field__label, .field--label-inline .field__items, .field--label-inline .field__item {
   float: none;
   display: inline; }
+
+.ds-search-highlight {
+  background-color: #a7e4e4; }
+
+.page-search form.search-form,
+.page-search .l-content > h2,
+.ds-search-extra {
+  width: 1230px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+.page-search form.search-form {
+  margin: 1em auto; }
+
+.page-search .field--name-field-lead {
+  width: 100%;
+  font-size: 1em;
+  padding: 0; }
 
 .node-type-case-study .group-left, .node-type-region .group-left {
   width: 75%;
