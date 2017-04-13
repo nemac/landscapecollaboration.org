@@ -4,7 +4,7 @@
  * Implements hook_form_alter
  */
 function remove_empty_filters_form_alter(&$form, &$form_state, $form_id) {
-    if ($form_id === 'views_exposed_form' && array_key_exists('op', $form_state['input']) === FALSE) {
+    if ($form_id === 'views_exposed_form' && array_key_exists('op', $form_state['input']) === FALSE && array_key_exists('#action', $form) && $form['#action'] === '/case-studies') {
         $where_statement = '';
         $join_statement = '';
         foreach(array_keys($form_state['input']) as $key) {
