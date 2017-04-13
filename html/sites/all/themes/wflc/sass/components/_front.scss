@@ -1,50 +1,68 @@
 .front {
 
-  .field--name-slideshow {
-    margin: 1em 0;
-    position: relative;
 
-    .views-slideshow-controls-bottom {
-      text-align: right;
-      font-size: .8em;
-      text-transform: uppercase;
-      margin-top: .5em;
 
-        span {
-          margin: auto .5em;
-        }
+  .slick-media img {
+    opacity: .5 !important;
+  }
 
+  .slick-media img:hover {
+    opacity: 1 !important;
+  }
+
+  .slide__description {
+    font-size: 28px;
+    color: white;
+    width: 60%;
+    border-bottom: thin solid $link-color;
+    padding-bottom: .5em;
+
+    a {
+      color: white;
+      text-shadow: 1px 1px 7px black; 
     }
+  }
 
-    .views-field-title {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      margin-right: 0;
-      padding: 7% 34% 1% 16%;
-      color: #fff;
-      background: rgba(0,0,0,.6);
-      background: linear-gradient(0deg, rgba(0,0,0,.65), rgba(0,0,0,.01));
+.view-front-page-slideshow {
+  margin-bottom: 60px;
+}
 
-      h2 {
-        font-size: 30px;
-        margin-bottom: 1em;
+#slick-carousel-slider {
+  height: 400px;
 
-          a {
-            color: white;
-          }
-
+    .slick__slide {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.65));
+        margin-top: 1em;
+        height: 400px;
       }
-    }
+
+  ul.slick-dots {
+    display: none !important;
   }
 
-  .field--name-field-leading-text {
-    font-size: 25px;
-    color: $link-color;
+}
+
+
+#slick-carousel-thumbnail {
+  .slick-initialized ~ .slick__arrow {
+    display: none !important;
+  }
+}
+
+.view-front-page-links {
+  .views-row {
+    width: 33%;
+    padding: 1em;
+    display: inline-block;
   }
 
+  .views-row-first {
+    padding-left: 0;
+  }
 
-
+  .views-row-last {
+    padding-right: 0;
+  }
+}
 
 }

@@ -19,3 +19,20 @@
 h3 {
 	color: #179999;
 }
+
+#block-menu-menu-footer-menu {
+    border-top: solid thin #ccc;
+}
+
+#block-menu-menu-footer-menu ul {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 11px;
+
+    li {
+		display: inline-block;
+		list-style-image: none;
+		padding-right: 1em;
+		font-size: .8em;
+    }
+}

@@ -139,8 +139,20 @@ ul.breadcrumb {
 .field--name-field-main-funder,
 .field--name-field-additional-funders {
     .field__item:before {
-    content:"\203A\00A0";
+        content:"\203A\00A0";
     }
+}
+
+.field--name-field-state {
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-bottom: 1em;
+}
+
+
+
+.date-display-range {
+    display: inline-block;
 }
 
 .views-field-field-additional-funders {

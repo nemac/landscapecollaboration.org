@@ -33,13 +33,16 @@ em, i {
 }
 
 ul {
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
 }
 
 ul li {
-    list-style: disc;
-    margin: .5em auto;
+    list-style: none;
+
+    .field__item:before {
+        content:"\203A\00A0";
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
