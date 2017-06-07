@@ -14,7 +14,7 @@
   <?php if (isset($title_suffix['contextual_links'])): ?>
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
-  <?php print theme('breadcrumb', array('breadcrumb'=>drupal_get_breadcrumb())); ?>
+
 
   <<?php print $left_wrapper ?> class="group-left<?php print $left_classes; ?>">
     <?php print $left; ?>

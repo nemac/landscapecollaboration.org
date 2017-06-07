@@ -33,7 +33,11 @@ ul {
 ul li {
   list-style: none; }
   ul li .field__item:before {
-    content: "\203A\00A0"; }
+    content: "\203A\00A0";
+    color: #f69232; }
+
+ul.list li:before {
+  content: "\203A\00A0"; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1em auto; }
@@ -48,7 +52,16 @@ h3 {
   font-size: 20px; }
 
 ul.breadcrumb {
-  display: none; }
+  width: 1170px;
+  margin: 0 auto; }
+  ul.breadcrumb li {
+    display: inline-block;
+    font-size: .8em; }
+    ul.breadcrumb li a:after {
+      content: "\00A0\203A\00A0"; }
+
+.field--name-body ul li:before {
+  content: "\203A\00A0"; }
 
 .field--label-inline .field__label, .field--label-inline .field__items, .field--label-inline .field__item {
   float: none;
@@ -110,6 +123,9 @@ ul.breadcrumb {
   margin-bottom: .75em;
   color: #179999; }
 
+.node p ul li {
+  list-style: disc; }
+
 .node-type-case-study .field--name-field-asset,
 .node-type-case-study .field--name-field-threat,
 .node-type-case-study .field--name-field-option {
@@ -144,7 +160,8 @@ ul.breadcrumb {
 .field--name-field-funder-name .field__item:before,
 .field--name-field-main-funder .field__item:before,
 .field--name-field-additional-funders .field__item:before {
-  content: "\203A\00A0"; }
+  content: "\203A\00A0";
+  color: #f69232; }
 
 .field--name-field-state {
   margin-left: 10px;
@@ -178,6 +195,9 @@ ul.breadcrumb {
   clear: right; }
   .page-actions .views-field-field-image ul li, .page-workflow-guide .views-field-field-image ul li {
     list-style: none; }
+
+.view-case-study-funding .field-content {
+  line-height: 1.5em; }
 
 .node, .view-display-id-page {
   width: 1230px;
@@ -248,7 +268,7 @@ h1.site-name {
 
 h2.site-slogan {
   font-size: 14px;
-  text-transform: uppercase; }
+  font-style: italic; }
 
 #superfish-1 li {
   list-style: none;
@@ -296,6 +316,10 @@ h2.site-slogan {
   max-width: 100%;
   font-size: 2.5em;
   margin: .5em auto; }
+
+.view-regions .view-header img {
+  width: 600px;
+  height: auto; }
 
 .group-headercontent {
   position: relative;
@@ -432,10 +456,16 @@ h2.site-slogan {
   color: white;
   width: 60%;
   border-bottom: thin solid #f69232;
-  padding-bottom: .5em; }
+  padding-bottom: .25em;
+  margin-bottom: .25em; }
   .front .slide__description a {
     color: white;
     text-shadow: 1px 1px 7px black; }
+
+.front .slide__caption:after {
+  content: "CASE STUDY";
+  color: white;
+  text-shadow: 1px 1px 7px black; }
 
 .front .view-front-page-slideshow {
   margin-bottom: 60px; }
@@ -452,15 +482,27 @@ h2.site-slogan {
 .front #slick-carousel-thumbnail .slick-initialized ~ .slick__arrow {
   display: none !important; }
 
+.front .field--name-field-leading-text {
+  font-size: 24px;
+  color: #179999;
+  margin-bottom: 0;
+  padding-bottom: .25em;
+  border-bottom: thin solid #f69232; }
+
+.front .field--name-body h2 {
+  font-size: 18px;
+  font-style: italic;
+  color: #999;
+  margin-top: .25em;
+  margin-bottom: 1em; }
+
 .front .view-front-page-links .views-row {
   width: 33%;
   padding: 1em;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #dedede; }
 
-.front .view-front-page-links .views-row-first {
-  padding-left: 0; }
-
-.front .view-front-page-links .views-row-last {
-  padding-right: 0; }
+.front .view-front-page-links .views-field-title {
+  margin-top: .5em; }
 
 /*# sourceMappingURL=wflc.styles.css.map */

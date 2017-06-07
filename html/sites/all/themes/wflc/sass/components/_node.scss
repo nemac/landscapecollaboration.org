@@ -1,6 +1,23 @@
 // contains modifications for the main content of all node types
+
 ul.breadcrumb {
-    display: none;
+    width: 1170px;
+    margin: 0 auto;
+
+    li {
+        display: inline-block;
+        font-size: .8em;
+
+
+    a:after {
+        content:"\00A0\203A\00A0";
+    }
+}
+
+}
+
+.field--name-body ul li:before {
+        content:"\203A\00A0";
 }
 
 .field--label-inline {
@@ -90,6 +107,10 @@ ul.breadcrumb {
     margin-bottom: .75em;
     color: #179999;
     }
+
+    p ul li {
+        list-style:disc;
+    }
 }
 
 // todo: clean up the margin of the right group to be generalized
@@ -140,6 +161,7 @@ ul.breadcrumb {
 .field--name-field-additional-funders {
     .field__item:before {
         content:"\203A\00A0";
+        color: $link-color;
     }
 }
 
@@ -193,4 +215,8 @@ ul.breadcrumb {
             list-style: none;
         }
     }
+}
+
+.view-case-study-funding .field-content {
+    line-height: 1.5em;
 }

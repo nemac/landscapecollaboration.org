@@ -42,7 +42,12 @@ ul li {
 
     .field__item:before {
         content:"\203A\00A0";
+        color: $link-color;
     }
+}
+
+ul.list li:before {
+     content:"\203A\00A0";
 }
 
 h1, h2, h3, h4, h5, h6 {

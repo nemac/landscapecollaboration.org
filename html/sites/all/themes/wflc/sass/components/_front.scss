@@ -15,12 +15,19 @@
     color: white;
     width: 60%;
     border-bottom: thin solid $link-color;
-    padding-bottom: .5em;
+    padding-bottom: .25em;
+    margin-bottom: .25em;
 
     a {
       color: white;
       text-shadow: 1px 1px 7px black; 
     }
+  }
+
+  .slide__caption:after {
+    content: "CASE STUDY";
+    color: white;
+    text-shadow: 1px 1px 7px black; 
   }
 
 .view-front-page-slideshow {
@@ -49,20 +56,34 @@
   }
 }
 
+.field--name-field-leading-text {
+  font-size: 24px;
+  color: $header-color;
+  margin-bottom: 0;
+  padding-bottom: .25em;
+  border-bottom: thin solid $link-color;
+}
+
+.field--name-body h2 {
+  font-size: 18px;
+  font-style: italic;
+  color: #999;
+  margin-top: .25em;
+  margin-bottom: 1em;
+}
+
 .view-front-page-links {
   .views-row {
     width: 33%;
     padding: 1em;
     display: inline-block;
+    background-color: #dedede;
   }
 
-  .views-row-first {
-    padding-left: 0;
+  .views-field-title {
+    margin-top: .5em;
   }
 
-  .views-row-last {
-    padding-right: 0;
-  }
 }
 
 }
